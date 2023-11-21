@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PhoneController;
 use App\Http\Controllers\SettingController;
+use App\Http\Controllers\ArtistController;
+use App\Http\Controllers\DiskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +23,8 @@ Route::get('/', function () {
 });
 
 Route::resource('phone', PhoneController::class);
+Route::resource('artist', ArtistController::class);
+Route::resource('disk', DiskController::class);
 Route::get('phone/view/{ide}',[PhoneController::class, 'view'])-> name('phone.view');
 
 Route::get('setting',[SettingController::class, 'index'])-> name('setting.index');
