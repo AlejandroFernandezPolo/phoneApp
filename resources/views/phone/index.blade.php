@@ -79,16 +79,16 @@
       };
   });
   
-    //solucion3
-    const deletePhoneModal = document.getElementById('deletePhoneModal');
-    const phoneName = document.getElementById('phoneName');
-    const fromDeleteV3 = document.getElementById('fromDeleteV3');
-    deletePhoneModal.addEventListener('show.bs.modal', event => {
-        console.log('show');
-        alert(event.relatedTarget.dataset.name + '' + event.relatedTarget.dataset.url);
-        phoneName.innerHTML = event.relatedTarget.dataset.name;
-        formDeleteV3.action = event.relatedTarget.dataset.url;
-    });
+    // //solucion3
+    // const deletePhoneModal = document.getElementById('deletePhoneModal');
+    // const phoneName = document.getElementById('phoneName');
+    // const fromDeleteV3 = document.getElementById('fromDeleteV3');
+    // deletePhoneModal.addEventListener('show.bs.modal', event => {
+    //     console.log('show');
+    //     alert(event.relatedTarget.dataset.name + '' + event.relatedTarget.dataset.url);
+    //     phoneName.innerHTML = event.relatedTarget.dataset.name;
+    //     formDeleteV3.action = event.relatedTarget.dataset.url;
+    // });
 </script>
 @endsection
 

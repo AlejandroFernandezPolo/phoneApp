@@ -44,9 +44,8 @@ class ArtistController extends Controller
      * @param  \App\Models\Artist  $artist
      * @return \Illuminate\Http\Response
      */
-    public function show(Artist $artist)
-    {
-        //
+    public function show(Artist $artist) {
+        return view('artist.show', ['artist' => $artist]);
     }
 
     /**

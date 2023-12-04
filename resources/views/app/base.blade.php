@@ -79,15 +79,15 @@
           </a>
         </li>
         
-        <li class="nav-item">
-          <a class="nav-link text-white " href="{{ url('setting/showSelect') }}">
+        <!--<li class="nav-item">-->
+        <!--  <a class="nav-link text-white " href="{{ url('setting/showSelect') }}">-->
 
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">menu</i>
-            </div>
-            <span class="nav-link-text ms-1">Selects</span>
-          </a>
-        </li>
+        <!--    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">-->
+        <!--      <i class="material-icons opacity-10">menu</i>-->
+        <!--    </div>-->
+        <!--    <span class="nav-link-text ms-1">Selects</span>-->
+        <!--  </a>-->
+        <!--</li>-->
         
         <li class="nav-item">
           <a class="nav-link text-white " href="{{ url('artist') }}">

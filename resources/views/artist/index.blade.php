@@ -15,13 +15,17 @@
             @foreach($artists as $artist)
                 <tr>
                     <td>{{ $artist ->id }}</td>
-                    <td>{{ $artist ->name }}</td>
+                    <td>
+                        {{ $artist ->name }}
+                    </td>
                     <td>
                         @foreach($artist->disks as $disk)
                             {{ $disk->title }},
                         @endforeach
                     </td>
-
+                    <td>
+                        <a class="btn btn-primary" href="{{ url('artist/' . $artist->id) }}">show</a>
+                    </td>
                 @endforeach
         </tbody>
     </table>

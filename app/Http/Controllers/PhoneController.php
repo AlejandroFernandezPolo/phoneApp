@@ -34,7 +34,7 @@ class PhoneController extends Controller
      */
     public function store(Request $request) {
         // 1º generar el objeto
-        $object = new Phone($request ->all());
+        //$object = new Phone($request ->all());
         
         // 2º intentar guardar
         try{

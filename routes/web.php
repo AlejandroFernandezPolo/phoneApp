@@ -6,6 +6,7 @@ use App\Http\Controllers\PhoneController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\ArtistController;
 use App\Http\Controllers\DiskController;
+use App\Http\Controllers\PaisController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +25,13 @@ Route::get('/', function () {
 
 Route::resource('phone', PhoneController::class);
 Route::resource('artist', ArtistController::class);
+Route::get('disk/view/file/fotosubida.jpg', [DiskController::class, 'view'])-> name('disk.view');
 Route::resource('disk', DiskController::class);
+Route::get('disk/create/{idartist}',[DiskController::class, 'createArtist'])-> name('disk.create.artist');
 Route::get('phone/view/{ide}',[PhoneController::class, 'view'])-> name('phone.view');
 
 Route::get('setting',[SettingController::class, 'index'])-> name('setting.index');
 Route::get('setting/showSelect',[SettingController::class, 'showSelect'])-> name('setting.showSelect');
 Route::put('setting',[SettingController::class, 'update'])-> name('setting.update');
+
+Route::get('pais',[PaisController::class, 'index'])-> name('pais.index');
